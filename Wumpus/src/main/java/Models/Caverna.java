@@ -65,4 +65,21 @@ public class Caverna {
     public void setPlayer(Player player) {
         this.player = player;
     }
+
+    public void conectar(Direcao direcao, Caverna caverna) {
+        switch (direcao) {
+            case LESTE:
+                this.leste = caverna;
+                break;
+            case OESTE:
+                this.oeste = caverna;
+                break;
+            case NORTE:
+                this.norte = caverna;
+                break;
+            case SUL:
+                this.sul = caverna;
+                break;
+        }
+    }
 }

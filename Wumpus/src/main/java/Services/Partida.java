@@ -9,6 +9,7 @@ public class Partida {
     Caverna[] cavernas = new Caverna[25];
     ArrayList<Integer> cavernasVisitadas = new ArrayList<>();
     int cavernaAtual;
+    int contadorFlechas = 3;
     boolean indicadorFimDeJogo = false;
     Labirinto arvore = new Labirinto();
     Player player = new Player("player");
@@ -235,10 +236,20 @@ public class Partida {
                             } else {
                                 output.imprimirErro();
                                 player.setFlechas(player.getFlechas() - 1);
+                                contadorFlechas--;
+                                if(contadorFlechas == 0) {
+                                    output.imprimirDerrotaFlechas();
+                                    finalizarJogo();
+                                }
                             }
                         } else {
                             output.imprimirErro();
                             player.setFlechas(player.getFlechas() - 1);
+                            contadorFlechas--;
+                            if(contadorFlechas == 0) {
+                                output.imprimirDerrotaFlechas();
+                                finalizarJogo();
+                            }
                         }
                     } else {
                         output.imprimirOpcaoInvalida();
@@ -254,10 +265,20 @@ public class Partida {
                             } else {
                                 output.imprimirErro();
                                 player.setFlechas(player.getFlechas() - 1);
+                                contadorFlechas--;
+                                if(contadorFlechas == 0) {
+                                    output.imprimirDerrotaFlechas();
+                                    finalizarJogo();
+                                }
                             }
                         } else {
                             output.imprimirErro();
                             player.setFlechas(player.getFlechas() - 1);
+                            contadorFlechas--;
+                            if(contadorFlechas == 0) {
+                                output.imprimirDerrotaFlechas();
+                                finalizarJogo();
+                            }
                         }
                     } else {
                         output.imprimirOpcaoInvalida();
@@ -273,10 +294,20 @@ public class Partida {
                             } else {
                                 output.imprimirErro();
                                 player.setFlechas(player.getFlechas() - 1);
+                                contadorFlechas--;
+                                if(contadorFlechas == 0) {
+                                    output.imprimirDerrotaFlechas();
+                                    finalizarJogo();
+                                }
                             }
                         } else {
                             output.imprimirErro();
                             player.setFlechas(player.getFlechas() - 1);
+                            contadorFlechas--;
+                            if(contadorFlechas == 0) {
+                                output.imprimirDerrotaFlechas();
+                                finalizarJogo();
+                            }
                         }
                     } else {
                         output.imprimirOpcaoInvalida();
@@ -292,10 +323,20 @@ public class Partida {
                             } else {
                                 output.imprimirErro();
                                 player.setFlechas(player.getFlechas() - 1);
+                                contadorFlechas--;
+                                if(contadorFlechas == 0) {
+                                    output.imprimirDerrotaFlechas();
+                                    finalizarJogo();
+                                }
                             }
                         } else {
                             output.imprimirErro();
                             player.setFlechas(player.getFlechas() - 1);
+                            contadorFlechas--;
+                            if(contadorFlechas == 0) {
+                                output.imprimirDerrotaFlechas();
+                                finalizarJogo();
+                            }
                         }
                     } else {
                         output.imprimirOpcaoInvalida();

@@ -92,4 +92,8 @@ public class Output {
     public void imprimirPegarFlecha() {
         System.out.println("Você pegou uma flecha");
     }
+
+    public void imprimirDerrotaFlechas() {
+        System.out.println("Todas as flechas do mapa acabaram, você não pode mais matar o monstro!!!");
+    }
 }
