@@ -14,32 +14,16 @@ public class Caverna {
         return leste;
     }
 
-    public void setLeste(Caverna leste) {
-        this.leste = leste;
-    }
-
     public Caverna getOeste() {
         return oeste;
-    }
-
-    public void setOeste(Caverna oeste) {
-        this.oeste = oeste;
     }
 
     public Caverna getNorte() {
         return norte;
     }
 
-    public void setNorte(Caverna norte) {
-        this.norte = norte;
-    }
-
     public Caverna getSul() {
         return sul;
-    }
-
-    public void setSul(Caverna sul) {
-        this.sul = sul;
     }
 
     public Inimigo getInimigo() {
