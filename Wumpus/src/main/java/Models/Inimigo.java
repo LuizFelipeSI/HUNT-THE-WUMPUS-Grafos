@@ -2,7 +2,7 @@ package Models;
 
 public abstract class Inimigo {
 
-    private String nome;
+    protected String nome;
 
     public Inimigo(String nome) {
         this.nome = nome;
