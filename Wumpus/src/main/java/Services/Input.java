@@ -8,5 +8,4 @@ public class Input {
         Scanner scan = new Scanner(System.in);
         return scan.next();
     }
-
 }
