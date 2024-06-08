@@ -62,7 +62,7 @@ public class Output {
     }
 
     public void imprimirErro() {
-        System.out.println("Você errou");
+        System.out.println("Você errou!");
     }
 
     public void imprimirPocoProximo() {
