@@ -10,13 +10,7 @@ public class Menu {
             output.imprimirOpcoesMenuPrincipal();
             Input input = new Input();
             String opcao = input.digitarOpcoes();
-            boolean eNumero = true;
-            for (char c : opcao.toCharArray()) {
-                if (!Character.isDigit(c)) {
-                    eNumero = false;
-                    break;
-                }
-            }
+            boolean eNumero = input.verificarOpcao(opcao);
             if (!eNumero) {
                 output.imprimirSomenteNumeros();
             } else {
