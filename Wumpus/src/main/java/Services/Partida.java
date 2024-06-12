@@ -11,7 +11,7 @@ public class Partida {
     int cavernaAtual;
     int contadorFlechas = 3;
     boolean indicadorFimDeJogo = false;
-    Labirinto arvore = new Labirinto();
+    Labirinto labirinto = new Labirinto();
     Player player = new Player("player");
     Flecha flecha = new Flecha("flecha");
     Wumpus wumpus = new Wumpus("wumpus");
@@ -23,34 +23,34 @@ public class Partida {
         output.imprimirFraseInicio();
 
         for (int j = 0; j < cavernas.length; j++) {
-            cavernas[j] = arvore.criarNovoNo();
+            cavernas[j] = labirinto.criarNovoNo();
         }
 
-        arvore.criarSubArvore(cavernas[24], cavernas[23], null, cavernas[19], null);
-        arvore.criarSubArvore(cavernas[23], cavernas[22], cavernas[24], cavernas[18], null);
-        arvore.criarSubArvore(cavernas[22], cavernas[21], cavernas[23], cavernas[17], null);
-        arvore.criarSubArvore(cavernas[21], cavernas[20], cavernas[22], cavernas[16], null);
-        arvore.criarSubArvore(cavernas[20], null, cavernas[21], cavernas[15], null);
-        arvore.criarSubArvore(cavernas[19], cavernas[18], null, cavernas[14], cavernas[24]);
-        arvore.criarSubArvore(cavernas[18], cavernas[17], cavernas[19], cavernas[13], cavernas[23]);
-        arvore.criarSubArvore(cavernas[17], cavernas[16], cavernas[18], cavernas[12], cavernas[22]);
-        arvore.criarSubArvore(cavernas[16], cavernas[15], cavernas[17], cavernas[11], cavernas[21]);
-        arvore.criarSubArvore(cavernas[15], null, cavernas[16], cavernas[10], cavernas[20]);
-        arvore.criarSubArvore(cavernas[14], cavernas[13], null, cavernas[9], cavernas[19]);
-        arvore.criarSubArvore(cavernas[13], cavernas[12], cavernas[14], cavernas[8], cavernas[18]);
-        arvore.criarSubArvore(cavernas[12], cavernas[11], cavernas[13], cavernas[7], cavernas[17]);
-        arvore.criarSubArvore(cavernas[11], cavernas[10], cavernas[12], cavernas[6], cavernas[16]);
-        arvore.criarSubArvore(cavernas[10], null, cavernas[11], cavernas[5], cavernas[15]);
-        arvore.criarSubArvore(cavernas[9], cavernas[8], null, cavernas[4], cavernas[14]);
-        arvore.criarSubArvore(cavernas[8], cavernas[7], cavernas[9], cavernas[3], cavernas[13]);
-        arvore.criarSubArvore(cavernas[7], cavernas[6], cavernas[8], cavernas[2], cavernas[12]);
-        arvore.criarSubArvore(cavernas[6], cavernas[5], cavernas[7], cavernas[1], cavernas[11]);
-        arvore.criarSubArvore(cavernas[5], null, cavernas[6], cavernas[0], cavernas[10]);
-        arvore.criarSubArvore(cavernas[4], cavernas[3], null, null, cavernas[9]);
-        arvore.criarSubArvore(cavernas[3], cavernas[2], cavernas[4], null, cavernas[8]);
-        arvore.criarSubArvore(cavernas[2], cavernas[1], cavernas[3], null, cavernas[7]);
-        arvore.criarSubArvore(cavernas[1], cavernas[0], cavernas[2], null, cavernas[6]);
-        arvore.criarRaiz(cavernas[0], null, cavernas[1], null, cavernas[5]);
+        labirinto.criarSubArvore(cavernas[24], cavernas[23], null, cavernas[19], null);
+        labirinto.criarSubArvore(cavernas[23], cavernas[22], cavernas[24], cavernas[18], null);
+        labirinto.criarSubArvore(cavernas[22], cavernas[21], cavernas[23], cavernas[17], null);
+        labirinto.criarSubArvore(cavernas[21], cavernas[20], cavernas[22], cavernas[16], null);
+        labirinto.criarSubArvore(cavernas[20], null, cavernas[21], cavernas[15], null);
+        labirinto.criarSubArvore(cavernas[19], cavernas[18], null, cavernas[14], cavernas[24]);
+        labirinto.criarSubArvore(cavernas[18], cavernas[17], cavernas[19], cavernas[13], cavernas[23]);
+        labirinto.criarSubArvore(cavernas[17], cavernas[16], cavernas[18], cavernas[12], cavernas[22]);
+        labirinto.criarSubArvore(cavernas[16], cavernas[15], cavernas[17], cavernas[11], cavernas[21]);
+        labirinto.criarSubArvore(cavernas[15], null, cavernas[16], cavernas[10], cavernas[20]);
+        labirinto.criarSubArvore(cavernas[14], cavernas[13], null, cavernas[9], cavernas[19]);
+        labirinto.criarSubArvore(cavernas[13], cavernas[12], cavernas[14], cavernas[8], cavernas[18]);
+        labirinto.criarSubArvore(cavernas[12], cavernas[11], cavernas[13], cavernas[7], cavernas[17]);
+        labirinto.criarSubArvore(cavernas[11], cavernas[10], cavernas[12], cavernas[6], cavernas[16]);
+        labirinto.criarSubArvore(cavernas[10], null, cavernas[11], cavernas[5], cavernas[15]);
+        labirinto.criarSubArvore(cavernas[9], cavernas[8], null, cavernas[4], cavernas[14]);
+        labirinto.criarSubArvore(cavernas[8], cavernas[7], cavernas[9], cavernas[3], cavernas[13]);
+        labirinto.criarSubArvore(cavernas[7], cavernas[6], cavernas[8], cavernas[2], cavernas[12]);
+        labirinto.criarSubArvore(cavernas[6], cavernas[5], cavernas[7], cavernas[1], cavernas[11]);
+        labirinto.criarSubArvore(cavernas[5], null, cavernas[6], cavernas[0], cavernas[10]);
+        labirinto.criarSubArvore(cavernas[4], cavernas[3], null, null, cavernas[9]);
+        labirinto.criarSubArvore(cavernas[3], cavernas[2], cavernas[4], null, cavernas[8]);
+        labirinto.criarSubArvore(cavernas[2], cavernas[1], cavernas[3], null, cavernas[7]);
+        labirinto.criarSubArvore(cavernas[1], cavernas[0], cavernas[2], null, cavernas[6]);
+        labirinto.criarRaiz(cavernas[0], null, cavernas[1], null, cavernas[5]);
 
         Random r = new Random();
         int[] posicoes = new int[8];
