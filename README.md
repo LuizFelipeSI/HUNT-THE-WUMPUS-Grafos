@@ -1,4 +1,4 @@
-O código consiste em um jogo de HUNT THE WUMPUS feito utilizando a estrutura de dados ÁRVORE, utilizando Enum para realizar o mapeamento das cavernas, fazendo com que uma caverna tenha de 2 até 4 conexões com outras cavernas. O jogo possui um total de 25 cavernas.
+O código consiste em um jogo de HUNT THE WUMPUS feito utilizando GRAFOS e utilizando Enum para realizar o mapeamento das cavernas, fazendo com que uma caverna tenha de 2 até 4 conexões com outras cavernas. O jogo possui um total de 25 cavernas.
 
 REGRAS DO JOGO:
 - O objetivo do jogo é achar a caverna em que o WUMPUS está, e lançar uma flecha nele, fazendo com que o jogador vença o jogo.
